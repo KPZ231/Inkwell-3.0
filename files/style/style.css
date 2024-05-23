@@ -1,0 +1,66 @@
+body {
+  font-size: 28px;
+  font-family: Manrope;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  color: black;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  text-align: center; /* Centrowanie elementów listy */
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  height: 40vh; /* Dodatkowo ustawiamy wysokość, aby tekst był na środku ekranu */
+  margin: 1em; /* Resetujemy marginesy, aby uniknąć niepożądanych odstępów */
+  font-size: 120pt;
+}
+
+li {
+  display: inline-block; /* Zamiast float: left */
+  padding: 0px 10px;
+}
+
+li a {
+  display: block;
+  letter-spacing: 3px;
+  color: black;
+  text-align: center;
+  border-radius: 50px;
+  border: 2px solid black;
+  padding: 3px 40px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #b1b1b1;
+  color: white;
+  transition: 0.3s;
+}
+
+.active {
+  background-color: #000000;
+  color: white;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+  background-image: url("/files/images/gif.gif"); /* The image used */
+  height: 215px; /* You must set a specified height */
+  background-position: right;
+  background-repeat: no-repeat;
+  color: black;
+  text-align: center;
+}
